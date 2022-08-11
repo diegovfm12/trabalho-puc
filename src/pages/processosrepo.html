@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../css/reset.css" />
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <title>Processos</title>
+  </head>
+  <body class="bodyRepo">
+    <div class="navigation">
+      <div class="userLogado">
+        <h2>Bem vindo,<br /><span>Pedro Pacheco</span></h2>
+      </div>
+      <ul>
+        <li>
+          <a href="repohome.html">
+            <span class="icon"><i class="fa-solid fa-house"></i></span>
+            <span class="title">Home</span>
+          </a>
+        </li>
+        <li>
+          <a href="organogramasrepo.html">
+            <span class="icon"><i class="fa-solid fa-chart-line"></i></span>
+            <span class="title">Organogramas</span>
+          </a>
+        </li>
+        <li>
+          <a href="processosrepo.html">
+            <span class="icon"><i class="fa-solid fa-chart-simple"></i></span>
+            <span class="title">Processos</span>
+          </a>
+        </li>
+        <li>
+          <a href="popsrepo.html">
+            <span class="icon"><i class="fa-solid fa-chart-pie"></i></span>
+            <span class="title">POPs</span>
+          </a>
+        </li>
+        <li>
+          <a href="colaboradores.html">
+            <span class="icon"><i class="fa-solid fa-person"></i></span>
+            <span class="title">Cadastro de colaboradores</span>
+          </a>
+        </li>
+        <li>
+          <a href="sugestoesrepo.html">
+            <span class="icon"><i class="fa-solid fa-question"></i></span>
+            <span class="title">Sugestões/Ajuda</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="../index.html">
+            <span class="icon"
+              ><i class="fa-solid fa-arrow-right-from-bracket"></i
+            ></span>
+            <span class="title">Sair</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="processos">
+      <section class="cabecalhoprincipal">
+        <div class="titulo">Página de Processos</div>
+      </section>
+
+      <section class="corpoprincipal">
+        <button id="button-processo" class="dropdown">
+          Selecionar Processo
+        </button>
+        <ul data-dropdown="processos" class="hide dropdown-container">
+          <li
+            data-value="recrutamento"
+            data-dropdown="processos"
+            class="dropdown-option"
+          >
+            Realizar Recrutamento
+          </li>
+          <li
+            data-value="treinamento"
+            data-dropdown="processos"
+            class="dropdown-option"
+          >
+            Executar Treinamento
+          </li>
+          <li
+            data-value="desempenho"
+            data-dropdown="processos"
+            class="dropdown-option"
+          >
+            Aplicar Avaliação de Desempenho
+          </li>
+          <li
+            data-value="desligamento"
+            data-dropdown="processos"
+            class="dropdown-option"
+          >
+            Realizar Desligamento
+          </li>
+        </ul>
+      </section>
+
+      <section class="visualizadorPdf">
+        <iframe
+          class="iframe"
+          id="link-processo"
+          src="http://rh.unis.edu.br/wp-content/uploads/sites/67/2015/09/Fluxograma-Recrutamento-e-Sele%C3%A7%C3%A3o2.pdf"
+        ></iframe>
+      </section>
+    </div>
+    <script src="../../js/pops.js"></script>
+  </body>
+</html>

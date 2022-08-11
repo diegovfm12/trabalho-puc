@@ -1,0 +1,23 @@
+{
+  "name": "pmv-ads-2022-1-e1-proj-web-t11-gp6-gestao-de-processos",
+  "version": "1.0.0",
+  "description": "`Análise e Desenvolvimento de Sistemas - ADS`",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx json-server --watch db.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-1-e1-proj-web-t11-gp6-gestao-de-processos.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-1-e1-proj-web-t11-gp6-gestao-de-processos/issues"
+  },
+  "homepage": "https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-1-e1-proj-web-t11-gp6-gestao-de-processos#readme",
+  "dependencies": {
+    "json-server": "^0.17.0"
+  }
+}

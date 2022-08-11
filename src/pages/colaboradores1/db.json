@@ -1,0 +1,44 @@
+{
+  "produtos": [
+    {
+      "id": "1",
+      "nomeCompleto": "João da Silva Neto",
+      "uen": "Departamento de Compras",
+      "cargo": "Comprador",
+      "email": "joao.neto@gp6.com",
+      "telefone": "(31) 96666-6666"
+    },
+    {
+      "id": "2",
+      "nomeCompleto": "Maria de Fátima Costa",
+      "uen": "Departamento Comercial",
+      "cargo": "Orçamentista",
+      "email": "maria.costa@gp6.com",
+      "telefone": "(31) 98888-8888"
+    },
+    {
+      "id": "3",
+      "nomeCompleto": "José Maria Teixeira",
+      "uen": "Departamento Financeiro",
+      "cargo": "Assistente Administrativo",
+      "email": "jose.tei@gp6.com",
+      "telefone": "(31) 93333-3333"
+    },
+    {
+      "id": "4",
+      "nomeCompleto": "rerew",
+      "uen": "tyy",
+      "cargo": "erwe",
+      "email": "ytut",
+      "telefone": "5252"
+    },
+    {
+      "id": "5",
+      "nomeCompleto": "dwdw",
+      "uen": "dssad",
+      "cargo": "dsad",
+      "email": "dsa",
+      "telefone": "857"
+    }
+  ]
+}

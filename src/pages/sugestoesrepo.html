@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../css/reset.css" />
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <title>Sugestões/Ajuda</title>
+  </head>
+  <body class="bodyRepo">
+    <div class="navigation">
+      <div class="userLogado">
+        <h2>Bem vindo,<br /><span>Pedro Pacheco</span></h2>
+      </div>
+      <ul>
+        <li>
+          <a href="repohome.html">
+            <span class="icon"><i class="fa-solid fa-house"></i></span>
+            <span class="title">Home</span>
+          </a>
+        </li>
+        <li>
+          <a href="organogramasrepo.html">
+            <span class="icon"><i class="fa-solid fa-chart-line"></i></span>
+            <span class="title">Organogramas</span>
+          </a>
+        </li>
+        <li>
+          <a href="processosrepo.html">
+            <span class="icon"><i class="fa-solid fa-chart-simple"></i></span>
+            <span class="title">Processos</span>
+          </a>
+        </li>
+        <li>
+          <a href="popsrepo.html">
+            <span class="icon"><i class="fa-solid fa-chart-pie"></i></span>
+            <span class="title">POPs</span>
+          </a>
+        </li>
+        <li>
+          <a href="colaboradores.html">
+            <span class="icon"><i class="fa-solid fa-person"></i></span>
+            <span class="title">Cadastro de colaboradores</span>
+          </a>
+        </li>
+        <li>
+          <a href="sugestoesrepo.html">
+            <span class="icon"><i class="fa-solid fa-question"></i></span>
+            <span class="title">Sugestões/Ajuda</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="../index.html">
+            <span class="icon"
+              ><i class="fa-solid fa-arrow-right-from-bracket"></i
+            ></span>
+            <span class="title">Sair</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="sugestoes">
+      <form id="form" class="formulario">
+        <h1 class="titulo">Sugestões e Elogios</h1>
+        <p class="subtitulo">
+          Registre aqui suas sugestões de melhoria e/ou elogios.
+        </p>
+
+        <div class="namesurname">
+          <div class="nome">
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome" required />
+          </div>
+          <div class="sobrenome">
+            <label for="sobrenome">Sobrenome:</label>
+            <input type="text" name="sobrenome" id="sobrenome" required />
+          </div>
+        </div>
+
+        <div class="typesSector">
+          <div class="tiporegistro">
+            <label for="tiporegistro">Tipo de registro:</label>
+            <select id="tiporegistro" required>
+              <option selected disabled value="">Selecione</option>
+              <option>Sugestão</option>
+              <option>Elogio</option>
+              <option>Suporte</option>
+            </select>
+          </div>
+          <div class="setoresempresa">
+            <label for="setoresempresa">Setores da empresa:</label>
+            <select id="setoresempresa" required>
+              <option selected disabled value="">Selecione</option>
+              <option>Recursos Humanos</option>
+              <option>Comercial</option>
+              <option>Compras</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="assunto">
+          <label for="assunto">Assunto:</label>
+          <input type="text" name="assunto" id="assunto" required />
+        </div>
+        <div class="mensagem">
+          <label for="mensagem">Mensagem:</label>
+          <textarea
+            rows="10"
+            style="width: 35em"
+            id="mensagem"
+            name="mensagem"
+          ></textarea>
+        </div>
+        <input onclick="sendMail()" type="button" value="Enviar" id="submit" />
+      </form>
+    </div>
+    <script src="../../js/sugestoes.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("PL5zlNoGaChbXPgN7");
+      })();
+    </script>
+  </body>
+</html>
